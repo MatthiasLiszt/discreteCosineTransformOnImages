@@ -6,9 +6,14 @@ However I learned that instead two dimensional discrete cosine transform was use
 that it was easier to implement and so I decided to do it instead with DCT. 
 
 I read what was available on Wikipedia, StackOverflow, Geeks2Geeks etc. several times and finally I even simplified the code and 
-dropped quantification as used in JPEG. I am still curious whether or not a simple one dimensional DCT would do. 
+dropped quantification as used in JPEG. 
 
 # Issues
 
 Just trying to read a simple picture ended up in CORS warnings and so I packed the picture file in a js file in a variable instead
 in base64. 
+
+# Addition
+
+In the directory **onedim** you can see how a simple one-dimensional DCT is doing. There are a lot of squares - probably due to some 
+calculation errors or errors due to floating point arithmetic. It seems to be that a one-dimensional DCT could work for pictures. 
