@@ -35,12 +35,8 @@ function dctUntransformSimple(data) {
         const part = (pi/64) * (o + 0.5) * i;
         summe += color * Math.cos(part);
       }
-      const added = current[0]/sqrt2;
-      //const added = 0.5 * current[0];
       const ck = (1/32)**0.5;
-      const some = 32 + 40;
-      const value = Math.floor((added + summe) * ck);
-      localSquare.push(value + 128 + some);
+      localSquare.push(Math.floor(summe * ck) + 128);
     }
     undone.push(localSquare);
   }
